@@ -1,7 +1,6 @@
 package com.mp.dao;
 
 import com.mp.BaseTest;
-import com.mp.entity.PayInfo;
 import com.mp.entity.User;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,7 @@ public class UserDaoTest extends BaseTest {
     @Test
     public void testQueryArea(){
         User user = userMapper.selectByPrimaryKey(1);
-        System.out.println(user);
+        System.out.println(user.getUsername());
 //        assertEquals(2);
     }
 }
